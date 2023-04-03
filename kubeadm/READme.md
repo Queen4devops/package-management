@@ -148,8 +148,9 @@ kubectl get node
 ```
 ## Copy kubeadm join token from the master and execute in Worker Nodes to join to cluster
 ```sh
-kubeadm join 172.31.10.12:6443 --token cdm6fo.dhbrxyleqe5suy6e \
-        --discovery-token-ca-cert-hash sha256:1fc51686afd16c46102c018acb71ef9537c1226e331840e7d401630b96298e7d
+kubeadm join 172.31.19.169:6443 --token mm6tok.0frw8g3td4q1hizj \
+        --discovery-token-ca-cert-hash sha256:2e8c4d05cb2149339e943caeb7b82dcd9eea1dabaf9608a473bba2abb5f687a0
+
 ```
 
 ##  Generate the master join token on the master node
